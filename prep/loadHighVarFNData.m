@@ -1,6 +1,6 @@
 function [hvfnData,cfsAmps,cfsData,iHighVarFrames,iLowVarFrames]=loadHighVarFNData(flyName)
 
-% hvfn=loadHighVarData(flyName)
+% hvfn=loadHighVarFNData(flyName)
 % Load high-variance frame-normalized wavelet data for the given fly
 %
 % Inputs:

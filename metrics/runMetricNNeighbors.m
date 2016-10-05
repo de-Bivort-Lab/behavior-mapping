@@ -1,6 +1,6 @@
 function runMetricNNeighbors(jobTag,showFigures)
 
-% metricNNeighbors(jobTag,flyName)
+% runMetricNNeighbors(jobTag,flyName)
 % Compute nearest neighbor metric for all flies in the given job
 %
 % Inputs:

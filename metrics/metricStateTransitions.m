@@ -1,4 +1,4 @@
-function [xCount,shortCount,meanDwell]=metricStateTransitions(clusters)
+function [xCount,shortCount,meanDwell,runLengths]=metricStateTransitions(clusters)
 
 % [xCount,shortCount,meanDwell]=metricStateTransitions(clusters)
 % Count state transitions in the given cluster assignments

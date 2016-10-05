@@ -1,5 +1,10 @@
 function out=graphEdgeClassPlotter(G,connect,Vcolors)
 
+% out=graphEdgeClassPlotter(G,connect,Vcolors)
+% Make a figure of a graph, with vertex position specified by a MATLAB graph object,
+% directed edges specified by a weighted adjacency matrix, and colors on vertices
+% indicated by an nx3 RGB array.
+
 Vcolors=Vcolors-repmat(min(Vcolors),size(Vcolors,1),1);
 Vcolors=Vcolors./repmat(max(Vcolors),size(Vcolors,1),1);
 

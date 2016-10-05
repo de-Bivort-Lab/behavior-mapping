@@ -1,6 +1,6 @@
 function [m0ByFly,m1ByFly,m1All]=gatherMarkovCofit(jobTag,k)
 
-% gatherMarkov(jobTag,method)
+% gatherMarkovCofit(jobTag,method)
 % Gather Markov transition matrices for each of our flies PCA20-GMM-SW co-fit data
 %
 % Inputs:

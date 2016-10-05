@@ -5,6 +5,8 @@ function plotBIC(jobTag)
 %
 % Inputs:
 % jobTag [string]: folder with GMM results
+%
+% Figure S3: plotBIC('gmmRound1')
 
 
 % Parse results by fly/k
@@ -29,8 +31,8 @@ end
 % Plot all results
 flyNames=keys(scoresByFlyByK);
 NFlies=length(flyNames);
-plotv=min(4,round(sqrt(NFlies)));
-ploth=min(4,ceil(NFlies/plotv));
+plotv=round(sqrt(NFlies));
+ploth=ceil(NFlies/plotv);
 numPlots=ceil(NFlies/(ploth*plotv));
 
 for iPlot=1:numPlots
@@ -49,6 +51,6 @@ for iPlot=1:numPlots
         end
         % Now plot all of our values
         plot(K,bics,'LineWidth',2);
-        title(sprintf('%s %s - BIC vs K',jobTag,flyName));
+        title(flyName);
     end
 end

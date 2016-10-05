@@ -1,5 +1,4 @@
-This code is provided to facilitate understanding of the methods described in **preprint**. It is
-not intended to be run as a whole. Instead, individual data preparation, processing and presentation methods are documented in the hope that they can be adapted to run on foreign data sets without great effort.
+This code is provided to facilitate understanding of the methods described in "Systematic exploration of unsupervised methods for mapping behavior". It is not intended to be run as a whole. Instead, individual data preparation, processing and presentation methods are documented in the hope that they can be adapted to run on foreign data sets without great effort.
 
 The codebase was developed to run on MATLAB (2015b or later) under OS X and Linux. This is mostly due to the use of the hard-coded paths relative to ~.
 
@@ -23,14 +22,14 @@ motifs/metrics         support for all metrics referenced in the paper
 motifs/plots           render figures and movies
 motifs/odyssey         scripts to submit jobs to Harvard's Odyssey computing cluster (not required)
 
-data/               input to algorithms
+data/               input to algorithms, download here: https://zenodo.org/record/159191/files/raw%20data.zip
 data/cfs            frame-normalized wavelet data for each fly
 data/cfspc          PCA-compressed high-variance frame-normalized wavelet data for each fly
 data/datastarts     starting frame for each fly's data
-data/movies         raw movies, download from **TBD**
+data/movies         raw movies, download here: https://zenodo.org/record/159191#.V_QIq5MrJE4
 data/moviesyncinfo  starting frame for each fly's movie, used to synchronize movies to data sets
 data/shufpcs        results from PCA shuffling procedure, used to determine how many PCs to keep
-data/raw            raw data, download from **TBD**
+data/raw            raw data
 data/varthresholds  variance thresholds, used to separate low- and high- variance frames
 
 results/       results from processing

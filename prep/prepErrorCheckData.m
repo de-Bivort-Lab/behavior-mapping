@@ -1,6 +1,6 @@
 function [dataStruct,viFieldNames,dataFieldNames]=prepErrorCheckData(dataInterp)
 
-% dataStruct=mp_errorCheckData(mp)
+% dataStruct=prepErrorCheckData(mp)
 % Takes interpolated data, checks for errors, produces raw data struct.
 %
 % Inputs:

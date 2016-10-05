@@ -1,10 +1,11 @@
 function plotGMMPosteriorsCofit(jobTag,k)
 
-% plotGMMPosteriorsCofit()
+% plotGMMPosteriorsCofit(jobTag,k)
 % Figure showing distribution of GMM posterior probability ratios for co-fit data
 %
 % Inputs:
 % jobTag [string]: the results we use here
+% k [double]: number of unmapped clusters in co-fit data set
 %
 % Figure 4C: plotGMMPosteriorsCofit('coRound2',180)
 

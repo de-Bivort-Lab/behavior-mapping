@@ -7,7 +7,9 @@ function pcagmmswGatherResults(jobTag)
 % jobTag [string]: folder where pcagmmswRunSingleFlies results are stored
 %
 % Results:
-% TODO: ?
+% gmm [gmdistribution]: Gaussian Mixture Model fit to PCA-compressed high-variance frame-normalized wavelet data
+% mappedClusterMeans [NUnmappedClusters x 1]: consolidated cluster to which each unmapped cluster maps
+% finalClustersByFly [string -> NHighVarFrames x 1]: consolidated cluster assignment for each frame, keyed by fly name
 
 % Look at all result files in the given folder
 files=dir(sprintf('~/results/%s/%s_pca20gmmsw_*.mat',jobTag,jobTag));

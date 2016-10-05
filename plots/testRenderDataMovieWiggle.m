@@ -1,5 +1,6 @@
 function testRenderDataMovieWiggle()
 
+% testRenderDataMovieWiggle()
 % The movies produced by renderDataMovie() had their axes change width as tick labels entered from the right,
 % this is the best workaround we've found so far
 

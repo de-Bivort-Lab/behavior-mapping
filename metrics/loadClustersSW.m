@@ -1,6 +1,6 @@
 function [allClusters,numClusters]=loadClustersSW(jobTag,flyName,includeLVFrames)
 
-% allClusters=loadClusters(jobTag,flyName)
+% allClusters=loadClustersSW(jobTag,flyName)
 % Load cluster data for the given job/fly, uses our sparse watershed mapping results
 %
 % Inputs:

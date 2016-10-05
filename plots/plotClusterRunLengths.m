@@ -1,13 +1,16 @@
 function plotClusterRunLengths(jobTag,flyName,gmmk,plotClusters)
 
 % plotClusterRunLengths(jobTag,flyName,gmmk,plotClusters)
-% Plot distribution of run lengths for the given cluster
+% Plot distribution of run lengths for the given clusters
 %
 % Inputs:
 % jobTag [string]: folder where PCA20 GMM results are stored
 % flyName [string]: tag for fly whose data we want to load
 % gmmk [double]: PCA20 GMM k value for which we plot posteriors and cluster assignments
 % plotClusters [NPlotClusters x 1 double]: cluster assignments whose data we plot, empty means plot all clusters
+%
+% Figure S4: plotClusterRunLengths('swRound1','f37_1',72,[]);
+
 
 % Load the given fly's raw and frame-normalized high variance data, expand with zeros for low-variance frames
 if ~exist('dataNorm','var')

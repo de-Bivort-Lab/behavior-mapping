@@ -1,4 +1,4 @@
-function [watersheds,numWatersheds,xx,density,hvclusters,sigma,numPoints,rangeVals]=wshedProcess(embeddingValues,desiredK)
+function [watersheds,numWatersheds,xx,density,hvclusters,sigma,numPoints,rangeVals]=wshedProcess(embeddingValues,desiredK,sigmaDenom)
 
 % [watersheds,numWatersheds,xx,density]=wshedProcess(embeddingValues)
 % Return watersheds, 2-D density map and high-variance cluster assignments for the given embedded data points
@@ -27,9 +27,12 @@ maxVal=round(maxVal*1.1);
 sigmaDenomDefault=40;
 
 % Check whether we're searching for a desired K
-if ~exist('desiredK','var')
-    % Just run with the default value of sigma's denominator
-    [watersheds,numWatersheds,xx,density,sigma,numPoints,rangeVals]=process(sigmaDenomDefault);
+if ~exist('desiredK','var') || isempty(desiredK)
+    % Just run with the given or default value of sigma's denominator
+    if ~exist('sigmaDenom','var')
+        sigmaDenom=sigmaDenomDefault;
+    end
+    [watersheds,numWatersheds,xx,density,sigma,numPoints,rangeVals]=process(sigmaDenom);
 else
     % Find the optimal value for sigma's denominator
     sigmaDenom=fzero(@adjNumWatersheds,sigmaDenomDefault);
